@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    x_values = list(range(1, 1001, 5))
-    y_values = [x**2 for x in x_values]
+    x_values = np.arange(-100, 101, 5)
+    y_values = x_values**3
 
     plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Reds, edgecolors='none', s=10)
     # 设置每个坐标轴的取值范围
